@@ -1,0 +1,14 @@
+.countText {
+ margin-top: 10px ;
+}
+
+
+.green{
+    color: rgb(0, 206, 0);
+}
+.orange{
+    color: rgb(255, 179, 0);
+}
+.textArea{
+    margin: 0;
+}
