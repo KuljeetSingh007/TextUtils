@@ -15,10 +15,10 @@ export default function TextForm(props) {
             });
         }
     };
-    const removeExtraSpaces = () => {
-        const cleanedText = text.replace(/\s+/g, ' ').trim();
-        setText(cleanedText);
-    };  
+    // const removeExtraSpaces = () => {
+    //     const cleanedText = text.replace(/\s+/g, ' ').trim();
+    //     setText(cleanedText);
+    // };  
     const handleSpaces = () => {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "));
@@ -28,8 +28,8 @@ export default function TextForm(props) {
     const [words, setWords] = useState('');
     const [chars, setChars] = useState('');
     const [btnText, setbtnText] = useState('A');
-    const [pText1, setpText1] = useState('');
-    const [pText2, setpText2] = useState('');
+    // const [pText1, setpText1] = useState('');
+    // const [pText2, setpText2] = useState('');
     const btnClick = () => {
         let abi = text;
         if (abi !== text.toUpperCase()) {
@@ -47,16 +47,16 @@ export default function TextForm(props) {
         setText(event.target.value)
     }
     const callCount = () => {
-        setWords((text.split(" ")).filter((element)=>{return element.length!=0}).length)
+        setWords((text.split(" ")).filter((element)=>{return element.length!==0}).length)
         setChars(text.length)
         props.showAlert(`${words} words and ${chars} characters`,"info")
-        setpText1(' words and ')
-        setpText2('characters')
+        // setpText1(' words and ')
+        // setpText2('characters')
     }
     const callClear = () => {
 
-        setpText1('')
-        setpText2('')
+        // setpText1('')
+        // setpText2('')
         setText("")
         setWords("")
         setChars("")

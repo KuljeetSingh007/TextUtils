@@ -40,8 +40,8 @@
 }
 
 
-
 .themeBtn {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,10 +94,8 @@
     height: 15px;
     width: 15px;
     border: 2px solid rgb(200, 243, 255);
-
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-
     background-color: #FF6666;
 }
 
@@ -188,14 +186,62 @@
     text-decoration: none;
 }
 
-.sizeM {
-    font-size: 25px;
-}
 
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
+@media(max-width:995px) {
+   
+    .themeOpt {
+        position: relative;
+        left: 0px;
+        top: 30px;
+        height: 15px;
+        width: 15px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+        padding: 10px;
+        transition: color 0s, width 0.3s ease-in-out;
+        z-index: 0;
+    }
+    .open {
+        width: 130px;
+    }
 
+    .colorRed {
+   
+        top: 99px;
+        left:7px;
+    }
+ 
+    .colorBlue {
+        top: 82px;
+        left:7px;
+        }
+    
+   .colorGold {
+    top: 67px;
+    left:7px;
+ 
+       
+    } 
+     .colorWhite {
+        top: 52px;
+        left:7px;
+    } 
+    .whiteOpen {
+        top: 52px;
+        left: 37px;
+    }
+    .redOpen {
+        top: 98px;
+        left: 102px;
+    }
+    
+    .blueOpen {
+        top: 83px;
+        left: 80px;
+    }
+    
+    .goldOpen {
+        top: 68px;
+        left: 58px;
+    }
 }
