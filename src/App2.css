@@ -1,0 +1,55 @@
+/* src/App.css */
+
+.App {
+    text-align: center;
+  }
+  .textArea{
+    background-color: white;
+    color: black;
+  }
+ .navBar {
+    background: #353535;
+    padding: 1em;
+  }
+  
+  .navBar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+ .navBar li {
+    display: inline;
+  }
+  
+ .navBar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .theme-White{
+    background-color: white;
+    color: black;
+  }
+  .theme-red {
+    background-color: #ffdddd;
+    color: #aa0000;
+  }
+  
+  .theme-blue {
+    background-color: #ddeeff;
+    color: #0000aa;
+  }
+  
+  .theme-green {
+    background-color: #ddffdd;
+    color: #00aa00;
+  }
+  
+  .theme-yellow {
+    background-color: #ffffdd;
+    color: #aaaa00;
+  }
+  

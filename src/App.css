@@ -1,8 +1,8 @@
-.navbar {
+.navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #ffffff;
   padding: 10px 20px;
   color: white;
 }
@@ -26,4 +26,59 @@
 .navbar-text {
   margin-left: auto;
   margin-right: 0;
+}
+.whiteNav{
+  background-color: #bac6d1;
+  color:  #eff7ff !important;
+  text-decoration: none;
+}
+.blueNav {
+  background-color: #2B3467;
+  color: #E1F7F5 !important ;
+  text-decoration: none;
+}
+
+.redNav {
+  background-color: #ad5252;
+  color: #ffd8d8 !important;
+  text-decoration: none;
+}
+
+.goldNav {
+  background-color: #d69600 ;
+  color: #FFFAB7 !important;
+  text-decoration: none;
+}
+
+.redColor{
+  color: #ad5252 !important;
+  background-color: #FFCBCB !important;
+}
+.blueColor{
+  color: #2B3467 !important;
+  background-color: #BAD7E9 !important;
+}
+.goldColor{
+  color: #d69600 !important;
+  background-color:#FFFAB7 !important;
+}
+.whiteColor{
+  color: #99a5b1 !important;
+  background-color:#f8fbff !important;
+
+}
+.redBorder{
+  border:1px solid  #ad5252 ;
+}
+.blueBorder{
+  border:1px solid  #2B3467 ;
+}
+.goldBorder{
+  border:1px solid #d69600;
+}
+.whiteBorder{
+  border:1px solid #a1abb5;
+}
+.whiteIcon{
+  color: white;
 }

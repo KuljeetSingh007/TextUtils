@@ -1,7 +1,14 @@
-.countText {
- margin-top: 10px ;
-}
 
+.contentBox{
+    text-align: center;
+    margin: 100px 0 0 0;
+}
+.contentBox2{
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0 0 0;
+}
 
 .green{
     color: rgb(0, 206, 0);
@@ -11,4 +18,21 @@
 }
 .textArea{
     margin: 0;
+}
+
+
+.buttonsBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.buttons{
+    height: 40px;
+    width: 245px;
+}
+@media(max-width:995px){
+    .buttons{
+        height: 60px;
+        width: 110px;
+    }
 }

@@ -1,8 +1,8 @@
 import "./App.css";
 import Nav from './components/Nav';
 import TextForm from './components/TextForm';
-import About from './components/About';
-import React, { useState } from 'react';
+// import About from './components/About';
+import React, { useEffect, useState } from 'react';
 import Alert from "./components/Alert";
 function App() {
   const [alert, setAlert] = useState(null);
@@ -21,42 +21,69 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = '#323840';
       showAlert("Darkmode has been enabled", "warning");
-    } else if(mode==='dark') {
+    } else if (mode === 'dark') {
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Lightmode has been enabled", "success");
     }
   }
-  const [theme, setTheme] = useState("");
-  const redTheme = () => {
-    // setMode("");
-    setTheme("redNav");
-    document.body.style.backgroundColor = '#FFCBCB';
-
-  }
-  const blueTheme = () => {
-    setTheme("blueNav")
-    document.body.style.backgroundColor = '#BAD7E9';
-  }
-  const goldTheme = () => {
-    setTheme("goldNav")
-    document.body.style.backgroundColor = '#FFFAB7';
-  }
-  const whiteTheme = () => {
-    setTheme("");
-    document.body.style.backgroundColor = 'white';
-  }
+  const [mtheme, setmtheme] = useState('white-Theme');
+  const [color, setcolor] = useState('');
+  const [border, setborder] = useState('');
+  const handleThemeChange = (newTheme) => {
+    if (mtheme === newTheme) {
+      setmtheme('');
+      setborder('');
+    } else {
+      setmtheme(newTheme);
+    }
+  };
+  useEffect(() => {
+    switch (mtheme) {
+      case 'redNav':
+        setcolor('redColor');
+        setborder('redBorder')
+        document.body.style.backgroundColor = '#FFCBCB';
+        // document.querySelector('nav').style.backgroundColor = '#FF6666';
+        document.querySelector('nav').style.backgroundColor = '#ad5252';
+        break;
+      case 'blueNav':
+        setborder('blueBorder')
+        setcolor('blueColor');
+        document.body.style.backgroundColor = '#BAD7E9';
+        document.querySelector('nav').style.backgroundColor = '#2B3467';
+        break;
+      case 'goldNav':
+        setborder('goldBorder')
+        setcolor('goldColor');
+        document.body.style.backgroundColor = '#FFFAB7';
+        document.querySelector('nav').style.backgroundColor = '#d69600';
+        break;
+      case 'whiteNav':
+        setborder('whiteBorder')
+        setcolor('whiteColor');
+        document.body.style.backgroundColor = '#f8fbff';
+        document.querySelector('nav').style.backgroundColor = '#bac6d1';
+        break;
+      default:
+        setcolor('');
+        document.body.style.backgroundColor=mode==='light'?'white':'#323840';
+        document.querySelector('nav').style.backgroundColor=mode==='light'?'#f8f9fa':'#212529';
+    }
+  }, [mtheme, mode]);
   return (
     <>
-      <Nav title="TextUtils" mode={mode} toggleMode={toggleMode} whiteTheme={whiteTheme} redTheme={redTheme} blueTheme={blueTheme} goldTheme={goldTheme} theme={theme} />
-      <Alert alert={alert} />
-      <div className="body">
+      <Nav title="TextUtils" color={color} mode={mode} mtheme={mtheme} toggleMode={toggleMode} onThemeChange={handleThemeChange} />
+    
+     <Alert alert={alert} />
+    
+      <div className="">
         <div className="flexBox my-3 container">
-          <TextForm heading="Enter Text To Analyze" mode={mode} showAlert={showAlert} />
+          <TextForm heading="Enter Text To Analyze" mode={mode} txtcolor={color} border={border} showAlert={showAlert} />
         </div>
-        <div className="flexBox container" >
+        {/* <div className="flexBox container" >
           <About />
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+// import SwitchTheme from './switchTheme';
 // const router = createBrowserRouter([
 //   {
 //     path: "/",
@@ -18,6 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <SwitchTheme /> */}
     {/* <RouterProvider router={router} /> */}
   </React.StrictMode>
 );
