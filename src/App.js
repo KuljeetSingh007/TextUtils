@@ -51,14 +51,14 @@ function App() {
       case 'blueNav':
         setborder('blueBorder')
         setcolor('blueColor');
-        document.body.style.backgroundColor = '#FEFEFE';
+        document.body.style.backgroundColor = '#F4F6FF';
         document.querySelector('nav').style.backgroundColor = '#8AAAE5';
         break;
       case 'goldNav':
         setborder('goldBorder')
         setcolor('goldColor');
-        document.body.style.backgroundColor = '#FFFAB7';
-        document.querySelector('nav').style.backgroundColor = '#d69600';
+        document.body.style.backgroundColor = '#ffffff';
+        document.querySelector('nav').style.backgroundColor = '#e29b00';
         break;
       case 'whiteNav':
         setborder('whiteBorder')
