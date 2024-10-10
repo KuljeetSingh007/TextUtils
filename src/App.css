@@ -33,14 +33,14 @@
   text-decoration: none;
 }
 .blueNav {
-  background-color: #2B3467;
-  color: #E1F7F5 !important ;
+  background-color: #8AAAE5;
+  color: #FEFEFE !important ;
   text-decoration: none;
 }
 
 .redNav {
-  background-color: #ad5252;
-  color: #ffd8d8 !important;
+  background-color: #990011;
+  color: #FCF6F5 !important;
   text-decoration: none;
 }
 
@@ -51,12 +51,12 @@
 }
 
 .redColor{
-  color: #ad5252 !important;
-  background-color: #FFCBCB !important;
+  color: #990011 !important;
+  background-color: #FCF6F5 !important;
 }
 .blueColor{
-  color: #2B3467 !important;
-  background-color: #BAD7E9 !important;
+  color: #8AAAE5 !important;
+  background-color: #FEFEFE !important;
 }
 .goldColor{
   color: #d69600 !important;
@@ -68,10 +68,10 @@
 
 }
 .redBorder{
-  border:1px solid  #ad5252 ;
+  border:1px solid  #990011 ;
 }
 .blueBorder{
-  border:1px solid  #2B3467 ;
+  border:1px solid  #8AAAE5 ;
 }
 .goldBorder{
   border:1px solid #d69600;

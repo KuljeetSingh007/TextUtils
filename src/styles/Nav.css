@@ -71,7 +71,7 @@
 }
 
 .light {
-    background-color: rgb(200, 243, 255);
+    background-color: rgb(200, 219, 255);
     border: 5px solid #f4f4f4;
 }
 
@@ -96,7 +96,7 @@
     border: 2px solid rgb(200, 243, 255);
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-    background-color:  #ad5252;
+    background-color:  #990011;
 }
 
 .colorBlue {
@@ -107,7 +107,7 @@
     width: 15px;
     border-radius: 10px;
     border: 2px solid rgb(200, 243, 255);
-    background-color: #2B3467;
+    background-color: #8AAAE5;
     transition: 0.3s ease-in-out;
 
     /* background-color: #1679AB;  */
@@ -161,11 +161,11 @@
 }
 
 .colorRed:hover {
-    border: 2px solid  #ad5252;
+    border: 2px solid  #990011;
 }
 
 .colorBlue:hover {
-    border: 2px solid #2B3467;
+    border: 2px solid #8AAAE5;
 }
 
 

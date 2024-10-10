@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import "../styles/TextForm.css";
 import "../App.css";
 export default function TextForm(props) {
@@ -55,9 +55,7 @@ export default function TextForm(props) {
         setpText2('characters')
     }
     
-    useEffect(() => {
-        props.showAlert(`${words} words and ${chars} characters`,"info")
-    }, [words,chars]);
+
 
     const callClear = () => {
 

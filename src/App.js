@@ -5,6 +5,7 @@ import TextForm from './components/TextForm';
 import React, { useEffect, useState } from 'react';
 import Alert from "./components/Alert";
 function App() {
+
   const [alert, setAlert] = useState(null);
   const showAlert = (message, type) => {
     setAlert({
@@ -42,16 +43,16 @@ function App() {
     switch (mtheme) {
       case 'redNav':
         setcolor('redColor');
-        setborder('redBorder')
-        document.body.style.backgroundColor = '#FFCBCB';
+        setborder('redBorder');
+        document.body.style.backgroundColor = '#FCF6F5';
         // document.querySelector('nav').style.backgroundColor = '#FF6666';
-        document.querySelector('nav').style.backgroundColor = '#ad5252';
+        document.querySelector('nav').style.backgroundColor = '#990011';
         break;
       case 'blueNav':
         setborder('blueBorder')
         setcolor('blueColor');
-        document.body.style.backgroundColor = '#BAD7E9';
-        document.querySelector('nav').style.backgroundColor = '#2B3467';
+        document.body.style.backgroundColor = '#FEFEFE';
+        document.querySelector('nav').style.backgroundColor = '#8AAAE5';
         break;
       case 'goldNav':
         setborder('goldBorder')
@@ -67,16 +68,16 @@ function App() {
         break;
       default:
         setcolor('');
-        document.body.style.backgroundColor=mode==='light'?'white':'#323840';
-        document.querySelector('nav').style.backgroundColor=mode==='light'?'#f8f9fa':'#212529';
+        document.body.style.backgroundColor = mode === 'light' ? 'white' : '#323840';
+        document.querySelector('nav').style.backgroundColor = mode === 'light' ? '#f8f9fa' : '#212529';
     }
   }, [mtheme, mode]);
   return (
     <>
-      <Nav title="TextUtils" color={color} mode={mode} mtheme={mtheme} toggleMode={toggleMode} onThemeChange={handleThemeChange} />
-    
-     <Alert alert={alert} />
-    
+      <Nav title="TextUtils" mode={mode} mtheme={mtheme} toggleMode={toggleMode} onThemeChange={handleThemeChange} />
+
+      <Alert alert={alert} />
+
       <div className="">
         <div className="flexBox my-3 container">
           <TextForm heading="Enter Text To Analyze" mode={mode} txtcolor={color} border={border} showAlert={showAlert} />
@@ -85,6 +86,7 @@ function App() {
           <About />
         </div> */}
       </div>
+
     </>
   );
 }

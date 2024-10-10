@@ -14,7 +14,7 @@ export default function Nav(prop) {
             <div className="container-fluid">
                 <a className={`TextUtils ${prop.mtheme}`} href="/" >{prop.title}</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className={`navbar-toggler-icon ${prop.mode=='light'?'':'whiteIcon'}`} ></span>
+      <span className={`navbar-toggler-icon ${prop.mode==='light'?'':'whiteIcon'}`} ></span>
     </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
